@@ -24,12 +24,12 @@ if (!previousGuess) {
           response.innerText = 'Getting colder.';
           if (guess < secretNumber) {
             response.innerText += ' Guess higher.';
-          } else if (guess > secretNumber) {
+          } else  (guess > secretNumber) {
             response.innerText += ' Guess lower.';
           }
-        } else {
-          response.innerText = 'No change in temperature.';
-        }
+        // } else {
+        //   response.innerText = 'No change in temperature.';
+        // }
 
         previousGuess = guess;
         previousDifference = currentDifference;
