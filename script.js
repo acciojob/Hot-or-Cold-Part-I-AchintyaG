@@ -1,4 +1,5 @@
 var secretNumber = Math.floor(Math.random() * 100) + 1;
+ var btn = getElementById('btn');
     var previousGuess;
     var previousDifference;
 
@@ -34,3 +35,4 @@ if (!previousGuess) {
         previousDifference = currentDifference;
       }
     }
+ btn.addEventListener('click', checkGuess);
